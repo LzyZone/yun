@@ -119,7 +119,7 @@
         <div class="row" style="margin: 10rem 0 5rem 0;">
             <php>
                 $widget["vars"]["last_news_category_id"] = empty($widget["vars"]["last_news_category_id"])?1:$widget["vars"]["last_news_category_id"];
-                $last_news_limit=4;
+                $last_news_limit=8;
             </php>
             <portal:articles limit="$last_news_limit" order="post.published_time DESC"
                              categoryIds="1">
